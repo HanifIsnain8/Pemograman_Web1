@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: #232D3F;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+    height: 40px;
+    padding: 20px;
+    color: #232D3F;
+}
+
+
+.Navbar  a{
+    align-items: center;
+    font-size: 18px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.Profile {
+    display: grid;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+.Profile-txt{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.foto {
+    width: 100px;
+    margin: 20px;
+}
+
+.Profile-txt h2 {
+    text-align: left;
+    padding: 8px 0;
+}
+
+
+.Pengalaman{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Pengalaman li {
+    padding: 8px 0;
+}
+
+.Kontak {
+    text-align: center;
+    padding: 10px;
+}
+
+
+.Kontak a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.Footer{
+    text-align: center;
+    background-color: gray;
+    height: 50px;
+}
