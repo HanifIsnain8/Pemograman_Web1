@@ -1,112 +1,223 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
+body{
+    background-color: white;
+    color: black;
+}  
 
-body {
-    background-color: #232D3F;
+.dark-mode {
+    background-color: black;
+    color: white;
 }
 
-.Header {
+.Header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: grey;
-    height: 40px;
-    padding: 20px;
-    color: #232D3F;
-}
-
-
-.Navbar  a{
-    align-items: center;
-    font-size: 18px;
-    margin: 10px;
+    width: 100%;
+    height: 12vh;
+    background-color: black;
     color: white;
-    text-decoration: none;
+    padding: 20px;
+    position: fixed;
+    z-index: 100;
 }
 
 
-.Profile {
-    height: 250px;
-    width: 80%;
-    display: grid;
-    text-align: center;
-    background-color: gray;
-    align-items: center;
-    margin: 2% auto 20px auto;
-}
-
-.Profile-txt{
-    display: flex;
-    align-items: center;
-    margin: auto;
-}
-
-.foto {
-    width: 100px;
-    margin: 20px;
-}
-
-.Profile-txt h2 {
-    text-align: left;
-    padding: 8px 0;
-}
-
-
-.Pengalaman{
-    height: 150px;
-    width: 80%;
-    text-align: center;
-    margin: 2% auto 20px auto;
-    background-color: gray;
-    padding: 10px 0;
-}
-
-.Pengalaman li {
-    font-size: 20px;
+.Header ul li {
     list-style-type: none;
-    padding: 5px;
-}
-
-.Kontak {
-    height: 150px;
-    width: 80%;
-    text-align: center;
-    margin: 2% auto 20px auto;
-    background-color: gray;
-    padding: 10px 0;
-}
-.Kontak li {
-    list-style-type: none;
-    padding: 5px;
-}
-.Kontak a{
-    text-decoration: none;
-    font-size: 15px;
-    color: black;
-    font-size: 20px;
-}
-
-.resume {
-    height: 300px;
-    width: 80%;
-    text-align: center;
-    margin: 2% auto 20px auto;
-    background-color: gray;
-    padding: 10px 0;
-}
-
-.resume li {
-    list-style-type: none;
-    font-size: 15px;
-    text-align: left;
+    display: inline-block;
     padding: 10px 20px;
 }
 
-.Footer{
-    text-align: center;
+.Header ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+.Header ul li a:hover{
     background-color: grey;
-    height: 50px;
+    transition: .3s;
+}
+
+.Home,
+.Tentang,
+.Project{
+    width: 100%;
+    height: 100vh;
+    padding: 20vh 10vh 10vh;
+}
+
+.Home-isi{
+    height: 70vh;
+    border: solid;
+    padding: 0px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.Home-txt h2 {
+    font-size: 30px;  
+    padding-bottom: 10px;
+}
+
+.Home-txt h1 {
+    font-size: 50px;
+    padding: 10px 0;
+
+}
+.Home-txt h3 {
+    font-size: 25px;
+}
+
+.Home-img img {
+    height: 40vh;
+}
+
+.Tentang-isi{
+    height: 70vh;
+    border: solid;
+    padding: 0px 80px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.Tentang-isi h1{
+    margin-top: 20px;
+}
+
+.Tentang-isi img{
+    height: 20vh;
+    margin: 20px 0 10px 0;
+}
+
+.Tentang-isi p{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.Project-isi{
+    height: 70vh;
+    border: solid;
+    padding: 0px 40px;
+    border-radius: 10px;
+}
+
+.Project-isi h1{
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.Project-box{
+    display: flex;
+}
+
+.box-1,
+.box-2,
+.box-3{
+    text-align: center;
+    height: 40vh;
+    background-color: grey;
+    width: 30%;
+    border: solid;
+    margin: 40px 20px;
+    border-radius: 20px;
+}
+
+.box-1:hover,
+.box-2:hover,
+.box-3:hover{
+    transform: scale(1.2);
+}
+
+.Project-box h3{
+    height: 15%;
+    padding-top: 10px;
+}
+.Project-box h4{
+    width: 80% ;
+    height: 65%;
+    text-align: justify;
+    margin: auto;
+    font-size: 15x;
+}
+
+.Project-box button{
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.Project-box button:hover{
+    background-color: #45a049;
+}
+
+.Project-box a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.Contact{
+    width: 100%;
+    height: 90vh;
+    padding: 20vh 10vh 10vh;
+}
+.Contact-isi{
+    height: 60vh;
+    border: solid;
+    border-radius: 10px;
+}
+
+.Contact-isi h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.Contact-icon{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+.Contact-icon a{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    border-radius: 30%;
+    border: 3px solid white;
+    margin: 0 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
+.Contact-icon a:hover{
+    transform: scale(1.3);
+}
+
+.Footer{
+    height: 10vh;
+    background-color: black;
+    border-top: solid white;
+}
+
+.Footer h3{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 4vh;
 }

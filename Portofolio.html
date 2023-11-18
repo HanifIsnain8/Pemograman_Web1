@@ -5,57 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Portofolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="Header">
         <h1>PORTOFOLIO</h1>
         <div class="Navbar">
-            <a href="#Profile">Profile</a>
-            <a href="#Pengalaman">Pengalaman</a>
-            <a href="#Kontak">Kontak</a>
+            <ul>
+                <li><a onclick="myFunction()"><i class="fas fa-adjust"></i></a></li>
+                <li><a href="#Home">HOME</a></li>
+                <li><a href="#Tentang">ABOUT ME</a></li>
+                <li><a href="#Project">PROJECT</a></li>
+                <li><a href="#Kontak">CONTACT</a></li>
+            </ul>
         </div>
     </div>
+
     <div class="Konten">
-        <div class="Profile" id="Profile">
-            <h2>PROFILE</h2>
-            <div class="Profile-txt">
-                <img src="FotoProfile.jpg" alt="foto" class="foto">
-                <div>
-                    <h2>NAMA : MUHAMMAD HANIF ISNAIN</h2>
-                    <h2>KELAS : 3A</h2>
-                    <h2>NIM : 22090122</h2>
+
+        <div class="Home" id="Home">
+            <div class="Home-isi">
+                <div class="Home-txt">
+                    <h2>Hallo semua🖐, Saya</h2>
+                    <h1>Muhammad Hanif Isnain</h1>
+                    <h3>Mahasiswa</h3>
+                </div>
+                <div class="Home-img">
+                    <img src="FotoProfile.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="Pengalaman" id="Pengalaman">
-            <H2>PENGALAMAN</H2>
-            <ul>
-                <li>SD 6 TAHUN</li>
-                <li>SMP 3 TAHUN</li>
-                <li>SMA 3 TAHUN</li>
-            </ul>
+
+        <div class="Tentang" id="Tentang">
+            <div class="Tentang-isi">
+                <h1>ABOUT ME</h1>
+                <div class="Tentang-img">
+                    <img src="FotoProfile.png" alt="">
+                    <h2>Mahasiswa</h2>
+                </div>
+                <p>Mahasiswa semester tiga jurusan Teknik Informatika di Politeknik Harapan Bersama Tegal,
+                saat ini masih fokus untuk mengembangkan skil. Memiliki minat di bidang Software Engineering
+                dengan tujuan  untuk menjadi seorang ahli dalam pengembangan perangkat lunak. Mampu mengunakan
+                bahasa pemograman java & python
+                </p>
+            </div>
         </div>
-        <div class="Kontak" id="Kontak">
-            <h2>KONTAK</h2>
-            <ul>
-                <li><a href="">LINKEND</a></li>
-                <li><a href="">INSTAGRAM</a></li>
-                <li><a href="">EMAIL</a></li>
-            </ul>
+        <div class="Project" id="Project">
+            <div class="Project-isi">
+                <h1>PROJECT</h1>
+                <div class="Project-box">
+                    <div class="box-1">
+                        <h3>UI/UX DESIGN</h3>
+                        <h4>Membuat tampilan untuk sebuah Aplikasi mengunakan software Figma.
+                            desain aplikasi ini memiliki tata letak yang bersih dan responsif,
+                            Antarmuka pengguna dirancang untuk memastikan pengalaman pengguna yang mudah dipahami
+                           
+                        </h4>
+                        <button><a href="https://www.figma.com/proto/NTlpsQq7ENtcQTC9VuOrJO/Bukalapang?page-id=40%3A93&type=design&node-id=40-94&viewport=-463%2C1478%2C0.42&t=SO2ezRfTbFQPY9HN-1&scaling=scale-down&starting-point-node-id=40%3A94&mode=design">Lihat</a></button>
+                        
+                    </div>
+                    <div class="box-2">
+                        <h3>ARTIKEL</h3>
+                        <h4>Menulis artike tentang "Atheisme di Indonesia". Membahas bagaimana atheisme menurut pancasila,
+                            hukum menjadi atheis di Indonesia, Serta alasan mengapa atheisme dilarang di Indonesia
+                        </h4>
+                        <button><a href="https://www.sinaranupdate.com/umum/5499153408/ateisme-di-indonesia-tantangan-dan-legalitasnya-dalam-konteks-pancasila-serta-hukum?page=all">Lihat</a></button>
+                        
+                    </div>
+                    <div class="box-3">
+                        <h3>LOGO</h3>
+                        <h4>Membuat logo untuk sebuah start up bernama Bukalapang. Logo yang dibuat memiliki hubungan dan
+                            makna tentang tujuan dan fokus start up Bukalapang.
+                        </h4>
+                        <button><a href="Logo Buka Lapang.png">Lihat</a></button>
+                        
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="resume">
-            <h2>RESUME</h2>
-            <ul>
-                <li>Red Hat adalah Perusahaan opensource yang bergerak di bidang software yaitu sistem operasi 
-                    linux yang mengacu ke dalam bidang edukasi yang sekarang ini bernama RHEL (Red Had Enterprise Linux)</li>
-                <li>Red Had mempunyai salah satu program yaitu program CSR. CSR adalah kegiatan yang memfokuskan untuk para community dibidang akademisi untuk menjembatani antara industri, akademik, dan institusi.</li>
-                <li>perbedaan Red Had dengan linux ialah Red Red Hat sebuah perusahaan yang menghasilkan distribusi Linux (RHEL) dan distribusi komunitas (Fedora), sementara Linux adalah kernel sistem operasi sumber terbuka yang digunakan dalam berbagai distribusi Linux</li>
-                <li>Perkembangan digital sekarang kita butuh adanya 3S yaitu Speed,Scal,Stability,Karena ketiga unsur tersebut aplikasi bisa semakin cepat workspeednya dan stabilitynya.</li>
-            </ul>
+
+        <div class="Contact" id="Kontak">
+            <div class="Contact-isi">
+                <h1>CONTACT ME</h1>
+                <div class="Contact-icon">
+                    <a href="https://www.instagram.com/hanifis9_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/HanifIsnain"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100016206279436&locale=id_ID"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="wa.me/+62895341576426"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/in/hanif-isnain-92955826b/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
         </div>
+
     </div>
+
     <div class="Footer">
-        <p>TUGAS PORTOFOLIO</p>
+        <h3>MUHAMMAD HANIF ISNAIN</h3>
     </div>
+
+     
+    <script src="porto.js"></script>
 </body>
 </html>

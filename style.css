@@ -1,40 +1,187 @@
-body {
+* {
     padding: 0;
     margin: 0;
-    background-color: cadetblue;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: slategray;
+.header{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 12vh;
+    position: fixed;
+    background-color: #363062;
+    z-index: 100%;
 }
 
-table,
-tr,
-td,
-th {
-    border: 1px solid black;
-    width: 600px;
+.header ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
 }
 
-tr {
+.header ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: white;
+}
+
+.header ul li a:hover{
+    background-color: grey;
+}
+.header h1{
+    padding: 0px 20px;
+    color: white;
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    padding: 20vh 10vh 10vh;
+}
+
+.home-isi{
+    height: 70vh;
+}
+.home-isi img{
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+}
+
+.about{
+    height: 170vh;
+    width: 100%;
+    padding: 20vh 10vh 10vh;
+}
+
+.about-isi{
+    border: solid;
+    height: 140vh;
+    border-radius: 10px;
+}
+
+.about-isi h1{
+    font-size: 50px;
+    padding: 50px;
     text-align: center;
 }
 
-tr:nth-child(even) {
-    background-color: #4f7474;
+.about-isi p{
+    font-size: 25px;
+    padding: 0px 20px;
+    margin: auto;
+    text-align: justify;
+    max-width: 70%;
+    text-indent: 100px;
 }
 
-#Saran {
-    height: 50px;
-    width: 600px;
+.fasilitas {
+    border-collapse: collapse;
+    width: 70%;
+    margin: auto;
+  }
+
+.fasilitas td, th {
+    border: 2px solid black;
+    padding: 8px;
+}
+.fasilitas tr:hover {
+    background-color: #ddd;
 }
 
-select {
+.galeri{
+    height: 100vh;
+    width: 100%;
+    padding: 20vh 0vh 10vh;
+}
+
+.galeri-isi{
+    padding: 10px;
+    text-align: center;
+}
+
+.galeri-box{
+    display: flex;
+    margin-top: 30px;
+}
+.gambar{
+    height: 40vh;
+}
+
+
+.gambar img{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+  height: 200px;
+}
+
+.galeri-isi p{
+    font-size: 20px;
+}
+
+.galeri-isi button{
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+.galeri-isi button:hover {
+    background-color: #45a049;
+}
+
+.masukan{
+    height: 55vh;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.masukan h3{
+    text-align: center;
+}
+
+.masukan input[type=text],textarea, select {
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    display: inline;
+}
+
+.masukan button{
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin: 8px 0;
+    border-radius: 4px;
     float: right;
 }
+  
+.masukan button:hover {
+    background-color: #45a049;
+}
 
-button {
-    float: right;
+
+.footer{
+    height: 70vh;
+    width: 100%;
+    background-color: #363062;
+    padding-top: 50px;
+}
+
+.footer h5{
+    text-align: center;
 }

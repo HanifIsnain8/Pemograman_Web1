@@ -9,61 +9,132 @@
 </head>
 
 <body>
-    <header>
-        <h1>POLDER BAYEMAN</h1>
-    </header>
-    <img style="width: 30%;display: block; margin-left: auto; margin-right: auto; padding-top: 10px;"
-        src="polderbayeman.jpg" alt="gambar polder bayeman">
-    <div style="margin-left: auto; margin-right: auto; max-width: 600px;">
-        <p>Polder Bayeman adalah sebuah bangunan penampung air yang berfungsi sebagai pengendali banjir untuk
-            wilayahKaligangsa, Kecamatan Margadana Kota Tegal. Polder yang memiliki luas lahan sekitar 6 hektar dengan
-            kolam 3,9 hektar, mempunyai daya tampung kolam 120.000 meterkubik.</p>
-        <P>Tak hanya sebagai pengendali banjir, Polder bayeman juga bisa menjadi tempat untuk berekreasi, bertema hutan
-            kota menjadikan polder bayeman sebagai destinasi untuk warga sekitar. Biasanya, setiap sore atau hari libur
-            banyak orang-orang yang berkunjung ke polder bayeman untuk bermain, mancing, senam, dll.</P>
-        <p>Untuk masuk ke polder bayeman, para pengunjung cukup membayar uang kebersihan kepada petugas. Hasil dari uang
-            tersebut digunakan untuk melengkapi fasilitas permainan anak di polder bayeman.</p>
-        <a href="https://www.google.com/maps/place/Polder+Bayeman/@-6.8868771,109.0782855,17z/data=!3m1!4b1!4m6!3m5!1s0x2e6fba171f1858e9:0xa0d0f35bbacd85ad!8m2!3d-6.8868771!4d109.0782855!16s%2Fg%2F11cn7c9wdb?entry=ttu"
-            target="_blank"> Maps Lokasi Polder Bayeman</a><br><br><br>
-        <table>
-            <tr>
-                <th>Fasilitas Yang Tersedia</th>
-                <th>Jumlah</th>
-            </tr>
-            <tr>
-                <td>Kamar mandi</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>Warung makan</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>Tempat duduk</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>spot foto</td>
-                <td>1</td>
-            </tr>
-        </table>
-        <br><br>
-        <form>
-            <h3 style="text-align: center;">MASUKAN UNTUK PENGELOLA POLDER BAYEMAN</h3>
-            <label for="Nama">Nama :</label>
-            <select name="rating" id="rating">
-                <option value="">Bintang 1</option>
-                <option value="">Bintang 2</option>
-                <option value="">Bintang 3</option>
-                <option value="">Bintang 4</option>
-                <option value="">Bintang 5</option>
-            </select><br>
-            <input type="text" id="Nama" name="Nama"> <br>
-            <label for="Saran">Saran :</label><br>
-            <textarea id="Saran" name="Saran" rows="5"></textarea>
-            <button>Kirirm</button>
-        </form>
+
+    <div class="header">
+        <h1>BAYEMAN</h1>
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#galeri">GALERI</a></li>
+            </ul>
+        </div>
     </div>
+
+
+    <div class="isi">
+        <div class="home" id="home">
+            <div class="home-isi">
+                <img src="polderbayeman.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="about" id="about">
+            <div class="about-isi">
+                <h1>ABOUT</h1>
+                <p>Polder Bayeman adalah sebuah bangunan penampung air yang berfungsi sebagai pengendali banjir untuk
+                    wilayahKaligangsa, Kecamatan Margadana Kota Tegal. Polder yang memiliki luas lahan sekitar 6 hektar dengan
+                    kolam 3,9 hektar, mempunyai daya tampung kolam 120.000 meterkubik.</p><br>
+                <p>Tak hanya sebagai pengendali banjir, Polder bayeman juga bisa menjadi tempat untuk berekreasi, bertema hutan
+                    kota menjadikan polder bayeman sebagai destinasi untuk warga sekitar. Biasanya, setiap sore atau hari libur
+                    banyak orang-orang yang berkunjung ke polder bayeman untuk bermain, mancing, senam, dll.</p><br>
+                <p>Untuk masuk ke polder bayeman, para pengunjung cukup membayar uang kebersihan kepada petugas. Hasil dari uang
+                    tersebut nantinya akan digunakan untuk melengkapi fasilitas permainan anak di polder bayeman.</p><br><br>
+                <table class="fasilitas">
+                    <tr>
+                        <th>Fasilitas Yang Tersedia</th>
+                        <th>Jumlah</th>
+                    </tr>
+                    <tr>
+                        <td>Kamar mandi</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Warung makan</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Tempat duduk</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>spot foto</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div> 
+        </div>
+
+        <div class="galeri" id="galeri">
+            <div class="galeri-isi">
+                <h1>GALERI</h1>
+                <div class="galeri-box">
+                    <div class="gambar">
+                        <img src="1.jpg" alt="">
+                        <p></p>
+                    </div>
+                    <div class="gambar">
+                        <img src="2.jpg" alt="">
+                        <p></p>
+                    </div>
+                    <div class="gambar">
+                        <img src="3.jpg" alt="">
+                        <p></p>
+                    </div>
+                    <div class="gambar">
+                        <img src="4.jpeg" alt="">
+                        <p></p>
+                    </div>
+                </div>
+                <p>Hubungi kami jika ingin membuat kegiatan atau event di polder bayeman </p>
+                <button>Hubungi kami</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="masukan">
+            <h3>MASUKAN UNTUK PENGELOLA POLDER BAYEMAN</h3>
+            <form id="">
+                <label for="Nama">Nama :</label>
+                <input type="text" id="Nama" name="Nama">
+                <label for="Saran">Saran :</label>
+                <textarea id="Saran" name="Saran" rows="5"></textarea>
+                <label for="rating">Rating :</label>
+                <select name="rating" id="rating">
+                    <option value="">Bintang 1</option>
+                    <option value="">Bintang 2</option>
+                    <option value="">Bintang 3</option>
+                    <option value="">Bintang 4</option>
+                    <option value="">Bintang 5</option>
+                </select>
+                <button onclick="submitForm ()">Kirirm</button>
+            </form>
+        </div>
+        <h5 style="margin-top: 15px;">MUHAMMAD HANIF ISNAIN</h5>
+    </div>
+
+    <script>
+        function submitForm() {
+            alert("Berhasil Terkirim");
+            document.getElementById("myForm").reset();
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
