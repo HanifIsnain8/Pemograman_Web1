@@ -12,7 +12,12 @@
     height: 12vh;
     position: fixed;
     background-color: #363062;
-    z-index: 100%;
+    z-index: 100;
+}
+
+.header h1{
+    padding: 0px 20px;
+    color: white;
 }
 
 .header ul li{
@@ -32,23 +37,19 @@
 .header ul li a:hover{
     background-color: grey;
 }
-.header h1{
-    padding: 0px 20px;
-    color: white;
-}
 
 .home{
     height: 100vh;
     width: 100%;
-    padding: 20vh 10vh 10vh;
+    padding: 20vh 10vh 0vh;
 }
 
 .home-isi{
-    height: 70vh;
+    height: 80vh;
 }
 .home-isi img{
     width: 100%;
-    height: 80vh;
+    height: 100%;
     margin: auto;
 }
 
